@@ -8,26 +8,28 @@
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
 </head>
 <body>
-    <form name="startGame">
-    <p><input type="button" name="game" id="game_btn" value="Получить приз"></p>
+    <form name="startGame"> 
+        
+        <div id="prize"></div>
 
-    <div id="prize"></div>
+        <div id='Money' class='buttonGroup hidden'>
+            <p>
+                <input type="button" id="money_btn" value="Перечислить на банковский счет">
+                <input type="button" id="moneyToBonus_btn" value="Конвертировать в баллы лояльности">
+            </p>
+        </div>
+        <div id='Point' class='buttonGroup hidden'>
+            <p><input type="button" id="point_btn" value="Зачислить на счет лояльности"></p>
+        </div>
+        <div id='Item' class='buttonGroup hidden'>
+            <p>
+                <input type="button" id="item_btn" value="Отправить по почте">
+                <input type="button" id="itemCancel_btn" value="Отказаться">
+            </p>    
+        </div>
 
-    <div id='Money' class='buttonGroup hidden'>
-        <p>
-            <input type="button" name="game" id="money_btn" value="Перечислить на банковский счет">
-            <input type="button" name="game" id="moneyToBonus_btn" value="Конвертировать в баллы лояльности">
-        </p>
-    </div>
-    <div id='Point' class='buttonGroup hidden'>
-        <p><input type="button" name="game" id="point_btn" value="Зачислить на счет лояльности"></p>
-    </div>
-    <div id='Item' class='buttonGroup hidden'>
-        <p>
-            <input type="button" name="game" id="item_btn" value="Отправить по почте">
-            <input type="button" name="game" id="itemCancel_btn" value="Отказаться">
-        </p>    
-    </div>
+        <p><input type="button" name="game" id="game_btn" value="Получить приз"></p>
+
     </form>   
 
     <script>

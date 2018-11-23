@@ -23,6 +23,11 @@
             $prizeArr = array_values($prizeArr);
         }
 
+        if(count($thingArr) == 0){
+            unset($prizeArr[1]);
+            $prizeArr = array_values($prizeArr);
+        }
+        
         $prizeNumber = random_int(0, count($prizeArr)-1);  
 
         if($prizeArr[$prizeNumber] == 'Money'){

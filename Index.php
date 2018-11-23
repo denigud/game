@@ -27,13 +27,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
 </head>
 <body>
 <form method="post">
     Имя<br>
-   <p><input type="text" name="name" value="<?=$name;?>"></p>
-   <p><input type="submit" value="Войти"></p>
+   <p><input type="text" name="name" class="name_text" value="<?=$name;?>"></p>
+   <p><input type="submit" class="signIn_btn" value="Войти"></p>
+   <?=$msg?>
 </form>
-<?=$msg?>
 </body>
 </html>
