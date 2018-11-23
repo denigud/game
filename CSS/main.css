@@ -7,19 +7,24 @@ form{
     bottom: 0;
     left: 0;
     margin: auto;
+    padding: 10px;
+    text-align:center;
 }
 
 #game_btn{
     width: 200px;
     height: 50px; 
     font-weight: bold;
+    margin: auto;
+    display: block;
 }
 
-#prize{
-    width: 200px;
-    height: 50px; 
+#prize{     
     font-weight: bold;
     font-size: 50px;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 2em;
 }
 
 .name_text{
@@ -36,9 +41,16 @@ form{
 
 .buttonGroup{
     display: block;
+    margin: auto;
 }
 
 .hidden{
     display: none;
+    margin: auto;
 }
 
+input{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
